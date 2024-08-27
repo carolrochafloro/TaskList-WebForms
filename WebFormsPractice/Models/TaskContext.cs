@@ -6,9 +6,9 @@ using System.Web;
 
 namespace WebFormsPractice.Models
 {
-    public class TasksContext :  DbContext
+    public class TaskContext :  DbContext
     {
-        public TasksContext() : base("WebFormsPractice") { }
+        public TaskContext() : base("WebFormsPractice") { }
 
         public DbSet<Task> Tasks { get; set; }
         public DbSet<Category> Categories { get; set; } 
